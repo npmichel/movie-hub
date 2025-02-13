@@ -1,4 +1,3 @@
-// src/services/favorites.js
 const FAVORITES_KEY = 'moviehub_favorites';
 
 export const favoritesService = {

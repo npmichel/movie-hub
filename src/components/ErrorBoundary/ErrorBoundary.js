@@ -1,4 +1,3 @@
-// src/components/ErrorBoundary/ErrorBoundary.js
 import React, { Component } from 'react';
 import { AlertTriangle } from 'lucide-react';
 import './ErrorBoundary.css';

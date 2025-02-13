@@ -1,4 +1,3 @@
-// src/pages/Favorites/Favorites.js
 import React, { useState, useEffect } from 'react';
 import { Heart, Trash2 } from 'lucide-react';
 import MovieCard from '../../components/MovieCard/MovieCard';

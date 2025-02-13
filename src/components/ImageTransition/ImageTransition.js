@@ -1,4 +1,3 @@
-// src/components/ImageTransition/ImageTransition.js
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './ImageTransition.css';

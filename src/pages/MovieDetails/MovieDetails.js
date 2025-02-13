@@ -1,4 +1,3 @@
-// src/pages/MovieDetails/MovieDetails.js
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Heart, Star, Clock, Calendar } from 'lucide-react';
@@ -13,7 +12,6 @@ const MovieDetails = () => {
   const [similarMovies, setSimilarMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-//   const [isFavorite, setIsFavorite] = useState(false);
   const [isFavorite, setIsFavorite] = useState(favoritesService.isFavorite(parseInt(id)));
 
   useEffect(() => {

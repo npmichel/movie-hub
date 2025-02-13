@@ -1,4 +1,3 @@
-// src/services/api.js
 const BASE_URL = 'https://api.themoviedb.org/3';
 
 const TOKEN = process.env.REACT_APP_TMDB_TOKEN;
@@ -30,6 +29,46 @@ export const api = {
       return data;
     } catch (error) {
       console.error('Erreur getPopularMovies:', error);
+      throw error;
+    }
+  },
+
+
+    // Méthode pour obtenir les films avec tri
+    getMovies: async (page = 1, sortBy = 'popularity.desc') => {
+      try {
+        const response = await fetch(
+          `${BASE_URL}/discover/movie?language=fr-FR&page=${page}&sort_by=${sortBy}`,
+          OPTIONS
+        );
+        
+        if (!response.ok) {
+          throw new Error('Erreur réseau');
+        }
+        
+        return await response.json();
+      } catch (error) {
+        console.error('Erreur getMovies:', error);
+        throw error;
+      }
+    },
+
+  // Méthode pour récupérer les genres
+
+  getMovieGenres: async () => {
+    try {
+      const response = await fetch(
+        `${BASE_URL}/genre/movie/list?language=fr-FR`,
+        OPTIONS
+      );
+      
+      if (!response.ok) {
+        throw new Error('Erreur lors de la récupération des genres');
+      }
+      
+      return await response.json();
+    } catch (error) {
+      console.error('Erreur getMovieGenres:', error);
       throw error;
     }
   },
