@@ -15,7 +15,7 @@ MovieHub est une application web moderne permettant de découvrir, rechercher et
 
 1. Clonez le repository :
 ```bash
-git clone https://github.com/votre-username/moviehub.git
+git clone https://github.com/npmichel/moviehub.git
 cd moviehub
 ```
 
@@ -82,15 +82,13 @@ src/
 4. Push vers la branche (`git push origin feature/AmazingFeature`)
 5. Ouvrez une Pull Request
 
-## 📝 Licence
 
-Distribué sous la licence MIT. Voir `LICENSE` pour plus d'informations.
 
 ## 👤 Contact
 
-Votre Nom - [@votre_twitter](https://twitter.com/votre_twitter)
+Votre Nom - [@exce_michel](https://x.com/exce_michel)
 
-Lien du projet : [https://github.com/votre-username/moviehub](https://github.com/votre-username/moviehub)
+Lien du projet : [https://github.com/npmichel/movie-hub](https://github.com/npmichel/movie-hub)
 
 ## 🙏 Remerciements
 
@@ -100,4 +98,6 @@ Lien du projet : [https://github.com/votre-username/moviehub](https://github.com
 - [Lucide](https://lucide.dev/) pour les icônes
 
 ---
-⭐️ From [votre-username](https://github.com/votre-username)
+⭐️ From [npmichel](https://github.com/npmichel)
+
+⭐️ Porfolio  [npmichel](https://npmichel.si7ty.com/)
