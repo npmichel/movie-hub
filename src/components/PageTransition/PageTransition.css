@@ -1,0 +1,6 @@
+/* src/components/PageTransition/PageTransition.css */
+.page-transition {
+    width: 100%;
+    min-height: 100vh;
+    will-change: transform, opacity;
+  }

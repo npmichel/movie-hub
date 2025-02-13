@@ -1,0 +1,56 @@
+/* src/pages/Home/Home.css */
+.home {
+    min-height: 100vh;
+  }
+  
+  .trending-section {
+    margin-bottom: 3rem;
+  }
+  
+  .popular-section {
+    padding: 0 1rem;
+  }
+  
+  .popular-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+  }
+  
+  .movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 1rem 0;
+  }
+  
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+  
+  .error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    color: #e50914;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .movies-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+  
+    .popular-section h2 {
+      font-size: 1.5rem;
+    }
+  }
