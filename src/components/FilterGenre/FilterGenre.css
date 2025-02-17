@@ -1,0 +1,50 @@
+.genre-filter {
+    margin-bottom: 2rem;
+  }
+  
+  .genre-filter h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+  
+  .genre-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .genre-tag {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+  }
+  
+  .genre-tag:hover {
+    background-color: #3d3d3d;
+  }
+  
+  .genre-tag.active {
+    background-color: #e50914;
+  }
+  
+  .genres-loading {
+    padding: 1rem;
+    color: #999;
+  }
+  
+  @media (max-width: 768px) {
+    .genre-tags {
+      gap: 0.3rem;
+    }
+  
+    .genre-tag {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.8rem;
+    }
+  }

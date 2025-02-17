@@ -1,0 +1,116 @@
+.error-boundary {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #1a1a1a;
+  }
+  
+  .error-content {
+    max-width: 600px;
+    text-align: center;
+    padding: 2rem;
+    background-color: #2d2d2d;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .error-icon {
+    color: #e50914;
+    margin-bottom: 1.5rem;
+    animation: pulse 2s infinite;
+  }
+  
+  .error-content h1 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .error-content p {
+    color: #cccccc;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  
+  .error-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .retry-button,
+  .home-button {
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .retry-button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+  }
+  
+  .retry-button:hover {
+    background-color: #f40612;
+  }
+  
+  .home-button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #ffffff;
+  }
+  
+  .home-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .error-details {
+    margin-top: 2rem;
+    text-align: left;
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+  }
+  
+  .error-details pre {
+    color: #e50914;
+    font-size: 0.8rem;
+    margin: 0;
+    white-space: pre-wrap;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .error-content {
+      padding: 1.5rem;
+    }
+  
+    .error-content h1 {
+      font-size: 1.5rem;
+    }
+  
+    .error-actions {
+      flex-direction: column;
+    }
+  }

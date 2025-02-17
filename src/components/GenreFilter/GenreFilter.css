@@ -1,0 +1,31 @@
+.genre-filter {
+    margin: 2rem 0;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+  }
+  
+  .genre-tags {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+  }
+  
+  .genre-tag {
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+  
+  .genre-tag:hover {
+    background-color: rgba(229, 9, 20, 0.2);
+  }
+  
+  .genre-tag.active {
+    background-color: #e50914;
+  }
